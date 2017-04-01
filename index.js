@@ -1,9 +1,10 @@
-var express = require('express')
-var app = express()
-app.use(express.static('public'))
+'use strict'
+
+const express = require('express')
+const path = require('path')
+const app = express()
+const PORT = 3000
 
 app.use('/', express.static(path.join(__dirname, 'public')))
-
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!')
-})
+app.listen(PORT)
+console.log(`Listening on ${PORT}!`)
