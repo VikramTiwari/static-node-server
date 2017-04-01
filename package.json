@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "DEBUG=static-node-server:* node index.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,9 @@
   },
   "homepage": "https://github.com/VikramTiwari/static-node-server#readme",
   "dependencies": {
-    "express": "5.0.0-alpha.2"
+    "compression": "^1.6.2",
+    "debug": "^2.6.3",
+    "express": "5.0.0-alpha.2",
+    "helmet": "^3.5.0"
   }
 }

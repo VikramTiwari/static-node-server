@@ -4,6 +4,9 @@ FROM node:alpine
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
+# Setup ENV
+ENV NODE_ENV "production"
+
 # Install app dependencies
 COPY package.json /usr/src/app/
 RUN yarn
