@@ -1,0 +1,23 @@
+{
+  "name": "static-node-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VikramTiwari/static-node-server.git"
+  },
+  "author": "Vikram Tiwari <vikramtheone1@gmail.com> (http://vikramtiwari.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VikramTiwari/static-node-server/issues"
+  },
+  "homepage": "https://github.com/VikramTiwari/static-node-server#readme",
+  "dependencies": {
+    "express": "5.0.0-alpha.2"
+  }
+}
