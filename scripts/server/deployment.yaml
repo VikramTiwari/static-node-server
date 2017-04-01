@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: static-node-server
+  namespace: static-node-server
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: static-node-server
+    spec:
+      containers:
+      - image: vikramtiwari/static-node-server:0.1
+        imagePullPolicy: Always
+        name: static-node-server
+        ports:
+        - containerPort: 3000
