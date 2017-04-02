@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:latest
 
 # Create app directory
 RUN mkdir -p /usr/src/app
@@ -9,6 +9,7 @@ ENV NODE_ENV "production"
 
 # Install app dependencies
 COPY package.json /usr/src/app/
+COPY git-sync.js /usr/src/app/
 RUN yarn
 
 # Bundle app source
