@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dev": "DEBUG=static-node-server:* node index.js",
-    "gitsync" : "DEBUG=static-node-server:git-sync node git-sync.js"
+    "gitsync": "DEBUG=static-node-server:git-sync node git-sync.js",
+    "postinstall": "DEBUG=* node gitsync"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
     "compression": "^1.6.2",
     "debug": "^2.6.3",
     "express": "5.0.0-alpha.2",
+    "fs-extra": "^2.1.2",
     "helmet": "^3.5.0",
     "nodegit": "^0.18.0"
   }
