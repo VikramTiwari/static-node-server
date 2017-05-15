@@ -24,7 +24,7 @@
     "compression": "^1.6.2",
     "debug": "^2.6.3",
     "express": "5.0.0-alpha.2",
-    "fs-extra": "^2.1.2",
+    "fs-extra": "^3.0.1",
     "helmet": "^3.5.0",
     "nodegit": "^0.18.0"
   }
