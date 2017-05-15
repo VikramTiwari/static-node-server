@@ -1,5 +1,7 @@
 # Static Node Server
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/VikramTiwari/static-node-server.svg)](https://greenkeeper.io/)
+
 ## Kubernetes Deployment
 
 From project's root directory run following commands:
